@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ru">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css.css' %}">
+        <script src="{% static 'main.js' %}"></script>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+    </section>
+    <div class="menu">
+            <label for="menu-control" class="hamburger">
+                <label for="menu-control" class="hamburger">
+                    <i class="hamburger__icon"></i>
+                    <i class="hamburger__icon"></i>
+                    <i class="hamburger__icon"></i>
+                  </label>
+              </label>
+              <input type="checkbox" id="menu-control" class="menu-control">
+              <aside class="sidebar">
+                <nav class="sidebar__menu">
+                  <input type="search" id="site-search" name="q" />
+                  <a href="">Поиск</a>
+                  <a href="">Настройки</a>
+                </nav>
+                
+                <label for="menu-control" class="sidebar__close"></labe
+    </div>
+       <dev>
+            {% block content %}{% endblock %}
+       </dev> 
+
+    </body>
+</html>
